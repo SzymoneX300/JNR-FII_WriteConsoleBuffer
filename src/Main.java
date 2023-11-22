@@ -26,7 +26,7 @@ public class Main {
 
     static Kernel32 kernel32 = Kernel32.INSTANCE;
 
-    private static Pointer hConsole = kernel32.CreateConsoleScreenBuffer(
+    private static final Pointer hConsole = kernel32.CreateConsoleScreenBuffer(
             Kernel32.GENERIC_WRITE | Kernel32.GENERIC_READ,
             Kernel32.FILE_SHARE_READ | Kernel32.FILE_SHARE_WRITE,
             null,
